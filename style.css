@@ -1,0 +1,164 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f0e8;
+    color: #3e332b;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    background: #6b5545;
+    color: white;
+    padding: 25px 15px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    max-width: 850px;
+    margin: 25px auto;
+    padding: 0 15px;
+}
+
+.card {
+    background: white;
+    padding: 22px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px #00000010;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 21px;
+}
+
+input,
+select {
+    display: block;
+    width: 100%;
+    padding: 11px;
+    margin: 8px 0 15px;
+    border: 1px solid #c8b9aa;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+button {
+    background: #80634e;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 16px;
+    margin: 4px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #5f4737;
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+    outline: 3px solid #c28c55;
+    outline-offset: 3px;
+}
+
+.counter {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.preview {
+    min-height: 45px;
+    padding: 12px;
+    background: #f5f0e8;
+    border-radius: 6px;
+    overflow-wrap: anywhere;
+}
+
+#landscapeImage {
+    display: block;
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+#imageCaption {
+    text-align: center;
+    font-weight: bold;
+}
+
+#keyStatus {
+    background: #f5f0e8;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.focus-layout {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.focus-card {
+    flex: 1;
+    min-width: 200px;
+    padding: 25px;
+    background: #f5f0e8;
+    border: 2px solid #c8b9aa;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.focus-card p {
+    margin-bottom: 0;
+}
+
+.focus-card.highlight {
+    background: #e5d2bd;
+    border-color: #80634e;
+    transform: scale(1.02);
+}
+
+.focus-card:focus-visible {
+    outline: 3px solid #c28c55;
+    outline-offset: 4px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    color: #6b5545;
+}
+
+@media (max-width: 600px) {
+    .card {
+        padding: 16px;
+    }
+
+    .focus-layout {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}

@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Practice | Tasks 6–10</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>JavaScript Practice</h1>
+        <p>Individual Work — Tasks 6–10</p>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Task 6: Counter with Click Events</h2>
+
+            <p class="counter" id="counter">0</p>
+
+            <div class="button-group">
+                <button id="increase">Increase</button>
+                <button id="decrease">Decrease</button>
+                <button id="reset">Reset</button>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Task 7: Live Text Preview</h2>
+
+            <label for="textInput">Enter your text:</label>
+            <input type="text" id="textInput" placeholder="Type something...">
+
+            <p class="preview" id="preview">
+                Your text will appear here
+            </p>
+
+            <p>Characters: <span id="charCount">0</span></p>
+
+            <button id="clearText">Clear</button>
+        </section>
+
+        <section class="card">
+            <h2>Task 8: Change an Image</h2>
+
+            <label for="imageSelect">Choose a landscape:</label>
+
+            <select id="imageSelect">
+                <option value="mountains">Mountains</option>
+                <option value="ocean">Ocean</option>
+                <option value="forest">Forest</option>
+            </select>
+
+            <img
+                id="landscapeImage"
+                src="images/mountains.jpg"
+                alt="Mountains under the sky"
+            >
+
+            <p id="imageCaption">Mountains</p>
+        </section>
+
+        <section class="card">
+            <h2>Task 9: Keyboard Events</h2>
+
+            <label for="keyboardInput">Type something:</label>
+            <input type="text" id="keyboardInput"
+                   placeholder="Press any key...">
+
+            <p id="keyStatus" aria-live="polite">
+                Press a key to see its name.
+            </p>
+
+            <p>Result: <span id="keyResult"></span></p>
+        </section>
+
+        <section class="card">
+            <h2>Task 10: Mouse and Focus Events</h2>
+
+            <div class="focus-layout">
+                <div id="focusCard" class="focus-card" tabindex="0">
+                    Interactive Card
+                    <p>Hover over me or use the Tab key.</p>
+                </div>
+
+                <p id="focusInstruction">
+                    Hover over the card or focus it using the keyboard.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Web Technologies — Individual JavaScript Practice</p>
+    </footer>
+
+</body>
+</html>
